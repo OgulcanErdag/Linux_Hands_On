@@ -31,7 +31,7 @@ Each folder corresponds to one Linux topic:
 📁 Linux-Plus-05 : sed & awk command and crontab
 📁 Linux-Plus-06 : Shell Scripting Basics
 📁 Linux-Plus-07 : Conditional Statements
-📁 Linux-Plus-08 : Loops
+📁 Linux-Plus-08 : Shell Scripting / Loops
 📁 Linux-Plus-09 : Shell Scripting / Functions
 
 Each folder contains:
