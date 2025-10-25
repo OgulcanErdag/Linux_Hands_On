@@ -36,7 +36,7 @@ echo "Hello World"
 ```
 
 - Before we add anything else to our script, we need to alert the system that a shell script is being started.
-This is done specifying `#!/bin/bash` on the first line, meaning that the script should always be run with bash, rather than another shell. `#!` is called a `shebang` because the `#` symbol is called a hash, and the `!` symbol is called a bang.
+  This is done specifying `#!/bin/bash` on the first line, meaning that the script should always be run with bash, rather than another shell. `#!` is called a `shebang` because the `#` symbol is called a hash, and the `!` symbol is called a bang.
 
 - After to save the above content, we need to make the script executable.
 
@@ -50,13 +50,12 @@ chmod +x basic.sh
 ./basic.sh
 ```
 
-- We can add the other shell commands to our script. 
-
+- We can add the other shell commands to our script.
 
 ```bash
 #!/bin/bash
 echo "hello"
-date 
+date
 pwd
 ls
 ```
@@ -73,7 +72,7 @@ date "+%H:%M:%S & %m-%d-%y & %A"
 
 ### Shell Comments
 
-- Bash ignores everything written on the line after the hash mark `(#)`. The only exception to this rule is the first line of the script that starts with the `#!` characters. 
+- Bash ignores everything written on the line after the hash mark `(#)`. The only exception to this rule is the first line of the script that starts with the `#!` characters.
 
 - Comments can be added at the beginning on the line or inline with other code. Let's update `basic.sh`.
 
@@ -133,24 +132,24 @@ multiline-comment
 
 - A variable is pointer to the actual data. The shell enables us to create, assign, and delete variables.
 
-- The name of a variable can contain only letters (a to z or A to Z), numbers ( 0 to 9) or the underscore character (_) and beginning with a letter or underscore character.
+- The name of a variable can contain only letters (a to z or A to Z), numbers ( 0 to 9) or the underscore character (\_) and beginning with a letter or underscore character.
 
 - The following examples are valid variable names.
 
 ```bash
 KEY=value
 _VAR=5
-clarus_way=test
+one_way=test
 ```
 
-> Note that there is no space on either side of the equals ( = ) sign. 
+> Note that there is no space on either side of the equals ( = ) sign.
 
 - The following examples are invalid.
 
 ```bash
 3_KEY=value
 -VAR=5
-clarus-way=test
+one-way=test
 KEY_1?=value1
 ```
 
@@ -194,7 +193,7 @@ working_directory=$(pwd)
 echo "Welcome, your working directory is $working_directory."
 ```
 
-- Make the script executable and execute it. 
+- Make the script executable and execute it.
 
 ```bash
 chmod +x command-substitution.sh
@@ -210,7 +209,7 @@ echo "Today is `date`"
 echo "You are `whoami`"
 ```
 
-- And execute it. 
+- And execute it.
 
 ```bash
 ./command-substitution.sh
@@ -218,7 +217,7 @@ echo "You are `whoami`"
 
 ### Console input
 
-- The Bash `read` command is a powerful built-in utility used take user input. 
+- The Bash `read` command is a powerful built-in utility used take user input.
 
 - Update the `variable.sh` file.
 
@@ -264,12 +263,11 @@ echo "$RANDOM is a random number"
 echo "The current line number is $LINENO"
 ```
 
-
 ```bash - a different usage example
 echo $(($RANDOM%10))
 ```
 
-- Make the script executable. 
+- Make the script executable.
 
 ```bash
 chmod +x argument.sh
@@ -287,7 +285,7 @@ chmod +x argument.sh
 
 #### Defining arrays
 
-- Following is the simplest method of creating an array variable. 
+- Following is the simplest method of creating an array variable.
 
 ```bash
 DISTROS[0]="ubuntu"
@@ -330,7 +328,7 @@ echo ${#DISTROS[@]}
 
 ### expr
 
-- `expr` command print  the value of expression to standard output. Let's see this.
+- `expr` command print the value of expression to standard output. Let's see this.
 
 ```bash
 expr 3 + 5
@@ -349,7 +347,7 @@ expr 3-2
 
 - Let's create a simple calculator. Create a file and name it `calculator.sh`.
 
-- Make the script executable. 
+- Make the script executable.
 
 ```bash
 chmod +x calculator.sh
@@ -370,7 +368,7 @@ echo "DIV="`expr $first_number / $second_number`
 
 ### let
 
-- `let` is a builtin function of Bash that helps us to do simple arithmetic. It is similar to `expr` except instead of printing the answer it saves the result to a variable. Unlike expr we need to enclose the expression in quotes. 
+- `let` is a builtin function of Bash that helps us to do simple arithmetic. It is similar to `expr` except instead of printing the answer it saves the result to a variable. Unlike expr we need to enclose the expression in quotes.
 
 ```bash
 let "sum = 3 + 5"
@@ -419,7 +417,7 @@ echo "The increment of first number is $first_number"
 echo "The decrement of second number is $second_number"
 ```
 
-- Make the script executable and execute it. 
+- Make the script executable and execute it.
 
 ```bash
 chmod +x let-calculator.sh
@@ -442,7 +440,7 @@ echo "Number = $number"
 echo "New number = $new_number"
 ```
 
-- Make the script executable and execute it. 
+- Make the script executable and execute it.
 
 ```bash
 chmod +x number.sh
@@ -472,10 +470,10 @@ echo $sum
 read -p "Input first number: " first_number
 read -p "Input second number: " second_number
 
-sum=$(($first_number + $second_number)) 
-sub=$(($first_number - $second_number)) 
-mul=$(($first_number * $second_number)) 
-div=$(($first_number / $second_number)) 
+sum=$(($first_number + $second_number))
+sub=$(($first_number - $second_number))
+mul=$(($first_number * $second_number))
+div=$(($first_number / $second_number))
 
 
 echo "SUM=$sum"
@@ -490,7 +488,7 @@ echo "The increment of first number is $first_number"
 echo "The decrement of second number is $second_number"
 ```
 
-- Make the script executable and execute it. 
+- Make the script executable and execute it.
 
 ```bash
 chmod +x parantheses-calculator.sh

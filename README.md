@@ -3,7 +3,7 @@
 # 🐧 Linux Hands-On Practices
 
 This repository contains structured **Linux hands-on exercises** created to build and strengthen real-world Linux administration and shell scripting skills.  
-Each folder represents a single lab session (`Linux-01`, `Linux-02`, etc.), including step-by-step terminal practice in the `LAB.md` file.
+Each folder represents a single lab session (`Linux-Plus-01`, `Linux-Plus-02`, etc.), including step-by-step terminal practice in the `LAB.md` file.
 
 ---
 
@@ -24,15 +24,15 @@ It is not a theoretical note collection, but a workspace for:
 
 Each folder corresponds to one Linux topic:
 
-📁 Linux-01 : Managing Files in Linux
-📁 Linux-02 : Linux Environment Variables
-📁 Linux-03 : Managing Users and Groups
-📁 Linux-04 : Filters and Control Operators
-📁 Linux-05 : sed & awk command and crontab
-📁 Linux-06 : Shell Scripting Basics
-📁 Linux-07 : Conditional Statements
-📁 Linux-08 : Loops
-📁 Linux-09 : Shell Scripting / Functions
+📁 Linux-Plus-01 : Managing Files in Linux
+📁 Linux-Plus-02 : Linux Environment Variables
+📁 Linux-Plus-03 : Managing Users and Groups
+📁 Linux-Plus-04 : Filters and Control Operators
+📁 Linux-Plus-05 : sed & awk command and crontab
+📁 Linux-Plus-06 : Shell Scripting Basics
+📁 Linux-Plus-07 : Conditional Statements
+📁 Linux-Plus-08 : Loops
+📁 Linux-Plus-09 : Shell Scripting / Functions
 
 Each folder contains:
 
@@ -59,18 +59,18 @@ Each folder contains:
 
 ## 🧾 Progress Overview
 
-| No  | Topic                         | Folder                 |
-| --- | ----------------------------- | ---------------------- |
-| 01  | Managing Files in Linux       | [Linux-01](./Linux-01) |
-| 02  | Linux Environment Variables   | [Linux-02](./Linux-02) |
-| 03  | Managing Users and Groups     | [Linux-03](./Linux-03) |
-| 04  | Filters and Control Operators | [Linux-04](./Linux-04) |
-| 05  | sed & awk command and crontab | [Linux-05](./Linux-05) |
-| 06  | Shell Scripting Basics        | [Linux-06](./Linux-06) |
-| 07  | Conditional Statements        | [Linux-07](./Linux-07) |
-| 08  | Loops                         | [Linux-08](./Linux-08) |
-| 09  | Shell Scripting / Functions   | [Linux-09](./Linux-09) |
-| ... | ...                           | ...                    |
+| No  | Topic                         | Folder                           |
+| --- | ----------------------------- | -------------------------------- |
+| 01  | Managing Files in Linux       | [Linux-Plus-01](./Linux-Plus-01) |
+| 02  | Linux Environment Variables   | [Linux-Plus-02](./Linux-Plus-02) |
+| 03  | Managing Users and Groups     | [Linux-Plus-03](./Linux-Plus-03) |
+| 04  | Filters and Control Operators | [Linux-Plus-04](./Linux-Plus-04) |
+| 05  | sed & awk command and crontab | [Linux-Plus-05](./Linux-Plus-05) |
+| 06  | Shell Scripting Basics        | [Linux-Plus-06](./Linux-Plus-06) |
+| 07  | Conditional Statements        | [Linux-Plus-07](./Linux-Plus-07) |
+| 08  | Loops                         | [Linux-Plus-08](./Linux-Plus-08) |
+| 09  | Shell Scripting / Functions   | [Linux-Plus-09](./Linux-Plus-09) |
+| ... | ...                           | ...                              |
 
 ---
 
