@@ -1,4 +1,4 @@
-# Hands‑on Linux‑02 — Environment Variables (Lab)
+# Hands‑on Linux-Plus-02 — Environment Variables (Lab)
 
 **Purpose:**
 This hands‑on lab explains Linux **environment variables**, **PATH**, **quoting**, and the **sudo/NOPASSWD** mechanism. It’s cleaned up and formatted for direct GitHub publishing.

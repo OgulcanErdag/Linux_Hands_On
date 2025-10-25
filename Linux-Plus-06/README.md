@@ -1,4 +1,4 @@
-# Hands-on Linux-06 : Shell Scripting Basics
+# Hands-on Linux-Plus-06 : Shell Scripting Basics
 
 Purpose of the this hands-on training is to teach the students how to script in shell.
 
@@ -84,7 +84,7 @@ pwd # This is an inline comment
 # ls
 ```
 
-- Unlike most of the programming languages, Bash doesn’t support multiline comments. But, we can use `here document` for this. In Linux, here document (also commonly referred to as `heredoc`) refers to a special block of code that contains multi-line strings that will be redirected to a command. If the `HereDoc block` is not redirected to a command, it can serve as a multiline comments placeholder.
+- Unlike most of the programming languages, Bash doesn’t support multiline comments. But, we can use `here document` for this. In Linux-Plus, here document (also commonly referred to as `heredoc`) refers to a special block of code that contains multi-line strings that will be redirected to a command. If the `HereDoc block` is not redirected to a command, it can serve as a multiline comments placeholder.
 
 ### HEREDOC syntax
 
@@ -94,7 +94,7 @@ pwd # This is an inline comment
 
 ```bash
 cat << EOF
-Welcome to the Linux Lessons.
+Welcome to the Linux-Plus Lessons.
 This lesson is about the shell scripting
 EOF
 ```
@@ -109,7 +109,7 @@ pwd # This is an inline comment
 # ls
 
 cat << EOF
-Welcome to the Linux Lessons.
+Welcome to the Linux-Plus Lessons.
 This lesson is about the shell scripting
 EOF
 

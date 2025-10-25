@@ -1,4 +1,4 @@
-# Hands-on Linux-07 : Shell Scripting/Conditional Statements
+# Hands-on Linux-Plus-07 : Shell Scripting/Conditional Statements
 
 Purpose of the this hands-on training is to teach the students how to use conditional statements in shell.
 
@@ -38,7 +38,7 @@ At the end of the this hands-on training, students will be able to;
 mkdir conditional-statements && cd conditional-statements
 ```
 
-- Create a `script` file named `if-statement.sh`. 
+- Create a `script` file named `if-statement.sh`.
 
 ```bash
 #!/bin/bash
@@ -57,31 +57,31 @@ chmod +x if-statement.sh
 ./if-statement.sh
 ```
 
-- We can use `Relational Operators`, `String Operators` or `File Test Operators` inside the square brackets ( [ ] ) in the if statement above. 
+- We can use `Relational Operators`, `String Operators` or `File Test Operators` inside the square brackets ( [ ] ) in the if statement above.
 
 ### Relational Operators
 
 - Bourne Shell supports the relational operators below that are specific to numeric values. These operators do not work for string values.
 
-| Operator | Description |
-| -------- | ----------- |
-| -eq   | equal                  |
-| -ne   | not equal              |
-| -gt   | greater than           |
-| -lt   | less than              |
-| -ge   | greater than or equal  |
-| -le   | less than or equal     |
+| Operator | Description           |
+| -------- | --------------------- |
+| -eq      | equal                 |
+| -ne      | not equal             |
+| -gt      | greater than          |
+| -lt      | less than             |
+| -ge      | greater than or equal |
+| -le      | less than or equal    |
 
 ### String Operators
 
 - The string operators below are supported by Bourne Shell.
 
-| Operator | Description |
-| -------- | ----------- |
-| =    | equal            |
-| !=   | not equal        |
-| -z   | Empty string     |
-| -n   | Not empty string |
+| Operator | Description      |
+| -------- | ---------------- |
+| =        | equal            |
+| !=       | not equal        |
+| -z       | Empty string     |
+| -n       | Not empty string |
 
 - Let's see this. Create a file and name it `string-operators.sh`
 
@@ -120,17 +120,17 @@ chmod +x string-operators.sh
 
 ### File Test Operators
 
-- There are a few operators that can be used to test various properties associated with a Linux file.
+- There are a few operators that can be used to test various properties associated with a Linux-Plus file.
 
-| Operator | Description |
-| -------- | ----------- |
-| -d file   | directory  |
-| -e file   | exists     |
-| -f file   | ordinary file     |
-| -r file   | readable          |
-| -s file   | size is > 0 bytes |
-| -w file   | writable          |
-| -x FILE   | executable        |
+| Operator | Description       |
+| -------- | ----------------- |
+| -d file  | directory         |
+| -e file  | exists            |
+| -f file  | ordinary file     |
+| -r file  | readable          |
+| -s file  | size is > 0 bytes |
+| -w file  | writable          |
+| -x FILE  | executable        |
 
 - Let's try this. Create files below and configure them.
 
@@ -169,23 +169,23 @@ fi
 if [[ -s file1 ]]
 then
   echo "file1 is > 0 bytes"
-fi 
+fi
 
 if [[ -s file2 ]]
 then
-  echo "file2 is > 0 bytes"  
+  echo "file2 is > 0 bytes"
 fi
 
 if [[ -e $1 ]]
 then
   echo "$1 is exists "
 else
-  echo "$1 is not exist"  
+  echo "$1 is not exist"
 fi
 
 if [[ -x $0 ]]
 then
-  echo "$0 is an executable file "  
+  echo "$0 is an executable file "
 fi
 ```
 
@@ -200,7 +200,7 @@ chmod +x file-operators.sh
 
 - Sometimes we want to execute a block of code if a statement is true, and another block of code if it is false.
 
-- Create a `script` file named `ifelse-statement.sh`. 
+- Create a `script` file named `ifelse-statement.sh`.
 
 ```bash
 #!/bin/bash
@@ -209,16 +209,18 @@ read -p "Input a number: " number
 if [[ $number -ge 10 ]]
 then
   echo "The number is bigger than or equal to 10."
-else 
+else
   echo "The number is smaller than 10"
 fi
 ```
+
 - Make the script executable and execute it.
 
 ```bash
 chmod +x ifelse-statement.sh
 ./ifelse-statement.sh
 ```
+
 - use elif statement
 
 ```bash
@@ -231,10 +233,11 @@ then
 elif [[ $number -eq 10 ]]
 then
   echo "The number is equal to 10."
-else 
+else
   echo "The number is smaller than 10."
 fi
 ```
+
 EXERSISE:
 
 > - Create a script. Ask user to enter `a file name` to create.
@@ -242,23 +245,23 @@ EXERSISE:
 > - If not, create the file and print the message "The file is created."
 
 Answer:
+
 ```bash
 #! /bin/bash
 read -p " Please enter a file Name " filename
 if [[ -e $filename ]]
-then 
+then
  echo "The file already exists."
 else
   touch $filename && echo "The file is created."
 fi
 ```
 
-
 ## Part 3 - If Elif Else Statements
 
 - The elif statement is used when it requires to specify several conditions in our program.
 
-- Create a `script` file named `elif-statement.sh`. 
+- Create a `script` file named `elif-statement.sh`.
 
 ```bash
 #!/bin/bash
@@ -270,7 +273,7 @@ then
 elif [[ $number -gt 10 ]]
 then
   echo "The number is bigger than 10"
-else 
+else
   echo "The number is smaller than 10"
 fi
 ```
@@ -281,14 +284,15 @@ fi
 chmod +x elif-statement.sh
 ./elif-statement.sh
 ```
+
 EXERSISE:
 
 > - Create a script. Ask the user to enter a name (file or directory).
 > - If there is a file with the same name, print the message "The file already exists."
 > - If something with this name exists:
-  • If it is a regular file, print: "It is a regular file."
-  • If it is a directory, print: "It is a directory."
-  • Otherwise print: "It exists but it is not a regular file or directory."
+>   • If it is a regular file, print: "It is a regular file."
+>   • If it is a directory, print: "It is a directory."
+>   • Otherwise print: "It exists but it is not a regular file or directory."
 
 ANSWER:
 
@@ -312,11 +316,12 @@ else
     echo "Does not exist."
 fi
 ```
+
 ## Part 4 - Nested If Statements
 
 - If statements can be nested. Let's see the nested structure on the followig example.
 
-- Create a `script` file named `nested-if-statement.sh`. 
+- Create a `script` file named `nested-if-statement.sh`.
 
 ```bash
 #!/bin/bash
@@ -333,10 +338,11 @@ then
   else
     echo "And is an even number"
   fi
-else 
+else
   echo "It is not bigger than 10"
 fi
 ```
+
 - Make the script executable and execute it.
 
 ```bash
@@ -364,20 +370,22 @@ then
 
 elif [[ $number -eq 10 ]]
 then
-  echo "Number is equal to 10" 
+  echo "Number is equal to 10"
 
-else 
+else
   echo "It is smaller than 10"
   if (( $number % 2 == 1 ))
   then
     echo "And is an odd number."
   else
     echo "And is an even number"
-  fi  
+  fi
 
 fi
 ```
+
 - short version
+
 ```bash
 #!/bin/bash
 
@@ -398,23 +406,24 @@ else
     echo "And is an even number."
 fi
 ```
+
 ## Part 5 - Boolean Operations
 
 - The Boolean operators below are supported by the Bourne Shell.
 
 | Operator | Description |
-| -------- | ----------- |
+| -------- | ----------- | --- | --- |
 | !        | negation    |
 | &&       | and         |
-| ||       | or          |
+|          |             |     | or  |
 
-- `!`  inverts a true condition into false and vice versa.
+- `!` inverts a true condition into false and vice versa.
 
 - `&&` is logical AND. If both the operands are true, then the condition becomes true otherwise false.
 
-- `||`	is logical OR. If one of the operands is true, then the condition becomes true.	
+- `||` is logical OR. If one of the operands is true, then the condition becomes true.
 
-- Create a `script` file named `boolean.sh`. 
+- Create a `script` file named `boolean.sh`.
 
 ```bash
 #!/bin/bash
@@ -429,6 +438,7 @@ else
   echo -e "\nIt is wrong account"
 fi
 ```
+
 - Make the script executable and execute it.
 
 ```bash
@@ -446,6 +456,7 @@ else
     echo "Welcome Admin!"
 fi
 ```
+
 ```bash
 #!/bin/bash
 read -p "Input a number: " n
@@ -456,6 +467,7 @@ else
     echo "The Number is equal to 10"
 fi
 ```
+
 ```bash
 #!/bin/bash
 if ! ping -c 1 google.com > /dev/null 2>&1; then
@@ -464,19 +476,20 @@ else
     echo "you have your internet-connection"
 fi
 ```
+
 - usecase example
 
 ```bash
 if ! curl -s --head https://yourwebsite.com > /dev/null; then
    echo "SITE DOWN! Control your Wbsite, something Wrong !"
 fi
-  ```
+```
 
 ## Part 6- Case Statements
 
 - To execute a multiway branch, we can use several if-elif statements but that would soon become complicated. Bash case statements are similar to if-else statements but are easier and simpler. It helps to match one variable against several values.
 
-- Create a `script` file named `case-statement.sh`. 
+- Create a `script` file named `case-statement.sh`.
 
 ```bash
 #!/bin/bash
@@ -491,25 +504,26 @@ read -p "Select an math operation
 " operation
 
 case $operation in
-  "1") 
+  "1")
      echo "result= $(( $first_number + $second_number))"
   ;;
   "2")
      echo "result= $(( $first_number - $second_number))"
   ;;
   "3")
-     echo "result= $(( $first_number * $second_number))" 
+     echo "result= $(( $first_number * $second_number))"
      ;;
   "4")
      echo "result= $(( $first_number / $second_number))"
   ;;
   *)
-     echo "Wrong choice..." 
+     echo "Wrong choice..."
   ;;
 esac
 ```
 
 - usecase example
+
 ```bash
 #!/bin/bash
 
@@ -556,6 +570,6 @@ chmod +x case-statement.sh
 ./case-statement.sh
 ```
 
-https://linuxize.com/post/bash-case-statement/
+https://Linux-Plusize.com/post/bash-case-statement/
 https://phoenixnap.com/kb/bash-case-statement
-https://www.geeksforgeeks.org/linux-unix/bash-scripting-case-statement/
+https://www.geeksforgeeks.org/Linux-Plus-unix/bash-scripting-case-statement/
