@@ -24,7 +24,7 @@ It is not a theoretical note collection, but a workspace for:
 
 Each folder corresponds to one Linux topic:
 
-Linux-01 : Managing Files in Linux
+📁 Linux-01 : Managing Files in Linux
 📁 Linux-02 : Linux Environment Variables
 📁 Linux-03 : Managing Users and Groups
 📁 Linux-04 : Filters and Control Operators
