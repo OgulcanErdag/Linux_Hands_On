@@ -1,3 +1,5 @@
+![LINUX Logo](./linux.jpg)
+
 # 🐧 Linux Hands-On Practices
 
 This repository contains structured **Linux hands-on exercises** created to build and strengthen real-world Linux administration and shell scripting skills.  
