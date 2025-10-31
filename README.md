@@ -30,15 +30,15 @@ Each folder corresponds to one Linux topic:
 📁 Linux-04 : Filters and Control Operators
 📁 Linux-05 : sed & awk command and crontab
 📁 Linux-06 : Shell Scripting Basics
-📁 Linux-07 : Shell Scripting / Conditional Statements
-📁 Linux-08 : Shell Scripting / Loops
+📁 Linux-07 : Conditional Statements
+📁 Linux-08 : Loops
 📁 Linux-09 : Shell Scripting / Functions
 
 Each folder contains:
 
 - `LAB.md` → step-by-step lab instructions
-- (optional) `scripts/` → bash or automation scripts
-- (optional) `screenshots/` → output verification images
+- `scripts/` → bash or automation scripts
+- `screenshots/` → output verification images
 
 ---
 
@@ -59,18 +59,18 @@ Each folder contains:
 
 ## 🧾 Progress Overview
 
-| No  | Topic                                    | Folder                 |
-| --- | ---------------------------------------- | ---------------------- |
-| 01  | Managing Files in Linux                  | [Linux-01](./Linux-01) |
-| 02  | Linux Environment Variables              | [Linux-02](./Linux-02) |
-| 03  | Managing Users and Groups                | [Linux-03](./Linux-03) |
-| 04  | Filters and Control Operators            | [Linux-04](./Linux-04) |
-| 05  | sed & awk command and crontab            | [Linux-05](./Linux-05) |
-| 06  | Shell Scripting Basics                   | [Linux-06](./Linux-06) |
-| 07  | Shell Scripting / Conditional Statements | [Linux-07](./Linux-07) |
-| 08  | Shell Scripting / Loops                  | [Linux-08](./Linux-08) |
-| 09  | Shell Scripting / Functions              | [Linux-09](./Linux-09) |
-| ... | ...                                      | ...                    |
+| No  | Topic                         | Folder                 |
+| --- | ----------------------------- | ---------------------- |
+| 01  | Managing Files in Linux       | [Linux-01](./Linux-01) |
+| 02  | Linux Environment Variables   | [Linux-02](./Linux-02) |
+| 03  | Managing Users and Groups     | [Linux-03](./Linux-03) |
+| 04  | Filters and Control Operators | [Linux-04](./Linux-04) |
+| 05  | sed & awk command and crontab | [Linux-05](./Linux-05) |
+| 06  | Shell Scripting Basics        | [Linux-06](./Linux-06) |
+| 07  | Conditional Statements        | [Linux-07](./Linux-07) |
+| 08  | Loops                         | [Linux-08](./Linux-08) |
+| 09  | Shell Scripting / Functions   | [Linux-09](./Linux-09) |
+| ... | ...                           | ...                    |
 
 ---
 
