@@ -572,14 +572,14 @@ tail -f date.log # watch live
  - Go to incoming webhooks and Activate incoming webhooks
  - Add New Webhook to Workspace >
  - You can see the sample of your webhook cURL then
-   forexample: " curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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 "
+   forexample: " curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/XXXX/XXXX/XXXX  "
 
 ```
 
 ```bash
 today_date=$(date +"%Y_%m_%d_%H_%M") #(date "+%Y-%m-%d")
 messages="Successful process....! $today_date - backup is ready"
-curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"$messages\"}" https://hooks.slack.com/services/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
+curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"$messages\"}" https://hooks.slack.com/services/XXXX/XXXX/XXXX
 ```
 
 ## Part 4 - SCP – Secure Copy Protocol
