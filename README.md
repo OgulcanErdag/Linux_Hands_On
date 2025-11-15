@@ -1,4 +1,4 @@
-![LINUX Logo](./linux.jpg)
+![LINUX Logo](./linux.webp)
 
 # 🐧 Linux Hands-On Practices
 
