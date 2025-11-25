@@ -2,7 +2,7 @@
 
 Purpose of the this hands-on training is to teach the students how to use loops in shell.
 
-## Learning Outcomes
+### Learning Outcomes
 
 At the end of the this hands-on training, students will be able to;
 
@@ -18,7 +18,7 @@ At the end of the this hands-on training, students will be able to;
 
 - use select loops in shell scripting
 
-## Outline
+### Outline
 
 - Part 1 - While loops
 
@@ -42,7 +42,7 @@ At the end of the this hands-on training, students will be able to;
 mkdir loops && cd loops
 ```
 
-- Let's display numbers from 1 to ten with `while loop`. Create a `script` file named `while-loop.sh`. 
+- Let's display numbers from 1 to ten with `while loop`. Create a `script` file named `while-loop.sh`.
 
 ```bash
 #!/bin/bash
@@ -68,9 +68,10 @@ chmod +x while-loop.sh
 
 - The until loop is identical to the while loop, except that it will execute the commands within it until the test becomes true.
 
-- Create a `script` file named `until-loop.sh`. 
+- Create a `script` file named `until-loop.sh`.
 
 ```bash
+
 #!/bin/bash
 
 number=1
@@ -83,7 +84,7 @@ done
 echo "Now, number is $number"
 ```
 
-- Note that, this time we write `-ge` instead of `-le`. So in first sitiuation, condition is false. It will execute the code until the condition is true. 
+- Note that, this time we write `-ge` instead of `-le`. So in first sitiuation, condition is false. It will execute the code until the condition is true.
 
 - Make the script executable and execute it.
 
@@ -94,12 +95,13 @@ chmod +x until-loop.sh
 
 ## Part 3 - For loops
 
-- Sometimes we want to iterate a block of code for each of the items in a given list. For this we use `for loop`. 
+- Sometimes we want to iterate a block of code for each of the items in a given list. For this we use `for loop`.
 
 ```bash
-touch file{1..10} #create files from file1 to file10 
+touch file{1..10} #create files from file1 to file10
 ```
-- Here is a simple example. Create a `script` file named `for-loop.sh`. 
+
+- Here is a simple example. Create a `script` file named `for-loop.sh`.
 
 ```bash
 #!/bin/bash
@@ -125,6 +127,7 @@ do
    echo $file
 done
 ```
+
 - Make the script executable and execute it.
 
 ```bash
@@ -140,7 +143,8 @@ do
    sudo useradd $name
 done
 ```
-# use list
+
+### use list
 
 ```bash
 #!/bin/bash
@@ -151,7 +155,8 @@ do
 done
 ```
 
-##  String list
+### String list
+
 ```bash
 #!/bin/bash
 
@@ -161,10 +166,12 @@ names="Joe David Matt John Timothy"
 for name in $names
 do
    echo "Welcome $name"
-  
+
 done
 ```
-## # Array list
+
+### Array list
+
 ```bash
 #!/bin/bash
 
@@ -174,14 +181,15 @@ names=("Joe" "David" "Matt" "John Timothy")
 for name in "${names[@]}"
 do
    echo "Welcome $name"
-  
+
 done
 ```
+
 - https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php
 
 ### Using arrays with the for loop
 
-- Create a `script` file named `for-array.sh`. 
+- Create a `script` file named `for-array.sh`.
 
 ```bash
 #!/bin/bash
@@ -205,7 +213,7 @@ chmod +x for-array.sh
 
 - A loop will continue forever unless the necessary condition is not met. A loop that runs endlessly without terminating can run for an infinite number of times. For this reason, these loops are named infinite loops.
 
-- Create a `script` file named `infinite-loop.sh`. 
+- Create a `script` file named `infinite-loop.sh`.
 
 ```bash
 #!/bin/bash
@@ -271,16 +279,16 @@ number=1
 until [[ $number -lt 1  ]]
 do
   ((number++))
-  
+
   tens=$(($number % 10))
-  
+
   if [[ $tens -eq 0 ]]
   then
     continue
   fi
 
   echo $number
-    
+
   if [[ $number -gt 100 ]]
   then
     break
@@ -298,7 +306,7 @@ done
 
 - The Select Loop generates a numbered menu from which users can select options. It's helpful when you need to ask the user to select one or more items from a list of options.
 
-- Create a `script` file named `select-loop.sh`. 
+- Create a `script` file named `select-loop.sh`.
 
 ```bash
 #!/bin/bash
@@ -311,23 +319,23 @@ PS3="Select the operation: "
 select operation in addition subtraction multiplication division exit
 do
   case $operation in
-    addition) 
+    addition)
       echo "result= $(( $first_number + $second_number))"
     ;;
     subtraction)
        echo "result= $(( $first_number - $second_number))"
     ;;
     multiplication)
-       echo "result= $(( $first_number * $second_number))" 
+       echo "result= $(( $first_number * $second_number))"
        ;;
     division)
        echo "result= $(( $first_number / $second_number))"
     ;;
     exit)
        break
-    ;;   
+    ;;
     *)
-       echo "Wrong choice..." 
+       echo "Wrong choice..."
     ;;
   esac
 done
@@ -342,4 +350,4 @@ chmod +x select-loop.sh
 ./select-loop.sh
 ```
 
-- https://linuxize.com/post/bash-select/ 
+- https://linuxize.com/post/bash-select/

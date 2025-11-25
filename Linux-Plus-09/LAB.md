@@ -2,13 +2,13 @@
 
 Purpose of the this hands-on training is to teach the students how to use functions in shell.
 
-## Learning Outcomes
+### Learning Outcomes
 
 At the end of the this hands-on training, students will be able to;
 
 - explain and use functions in shell.
 
-## Outline
+### Outline
 
 - Part 1 - Creating Functions
 
@@ -30,7 +30,7 @@ At the end of the this hands-on training, students will be able to;
 mkdir functions && cd functions
 ```
 
-- It is pretty easy to declare and call a function. Create a `script` file named `functions.sh`. 
+- It is pretty easy to declare and call a function. Create a `script` file named `functions.sh`.
 
 ```bash
 #!/bin/bash
@@ -100,7 +100,7 @@ pwt  # It is wrong command
 echo $?  #127
 ```
 
-- When a bash function completes, its return value is the status of the last statement executed in the function. We can speciy return status by using the `return` keyword. We can think the `return` keyword as exit status of function. 
+- When a bash function completes, its return value is the status of the last statement executed in the function. We can speciy return status by using the `return` keyword. We can think the `return` keyword as exit status of function.
 
 - Add `return 3` line to `Welcome function`.
 
@@ -115,6 +115,7 @@ Welcome () {
 Welcome Joe Matt Timothy
 echo $?
 ```
+
 - And execute it.
 
 ```bash
@@ -122,6 +123,7 @@ echo $?
 ```
 
 - EXAMPLE
+
 ```bash
 check_user() {
     if id "$1" &>/dev/null; then
@@ -142,7 +144,7 @@ fi
 
 ## Part 4 - Nested Functions
 
-- One of the useful features of functions is that they can call themselves and other functions. 
+- One of the useful features of functions is that they can call themselves and other functions.
 
 - Create a `script` file named `nested-functions.sh`.
 
@@ -168,11 +170,10 @@ chmod +x nested-functions.sh
 ./nested-functions.sh
 ```
 
-
 ## Part 5 - Variables Scope
 
 - Global variables are variables that can be accessed from anywhere in the script regardless of the scope. In Bash, by default all variables are defined as global, even if declared inside the function.
-Local variables can be declared within the function body with the local keyword and can be used only inside that function. 
+  Local variables can be declared within the function body with the local keyword and can be used only inside that function.
 
 - Create a `script` file named `variables-scope.sh`.
 
@@ -201,7 +202,9 @@ echo -e "After calling function:\nvar1: $var1\nvar2: $var2"
 chmod +x variables-scope.sh
 ./variables-scope.sh
 ```
+
 ## EXAMPLE-1:
+
 ```bash
 
 #!/bin/bash
@@ -209,7 +212,7 @@ read -p "Enter username: " user_input
 
 check_user () {
     local username=$1
-    
+
     if id "$username" &>/dev/null; then
         echo "User $username exists."
         ask_password "$username"
@@ -232,15 +235,16 @@ ask_password () {
 
 check_user "$user_input"
 ```
+
 ## EXAMPLE-2:
 
-``` bash
+````bash
 #!/bin/bash
 
 is_odd () {
 
     number=$1
-    if (( $number % 2 == 0 )) 
+    if (( $number % 2 == 0 ))
     then
       echo "number is even"
     else
@@ -253,15 +257,15 @@ do
   read -p "Enter a positive number : " P_NUMBER
 
     if [[ $P_NUMBER -le -1 ]]
-    then 
+    then
         echo " the number is a negative number exit the script"
       break
     else
         is_odd $P_NUMBER
-    fi    
+    fi
 
 done
-    
+
 done
 
 ## Deferency between berak and continue
@@ -272,7 +276,7 @@ done
 is_odd () {
 
     number=$1
-    if (( $number % 2 == 0 )) 
+    if (( $number % 2 == 0 ))
     then
       echo "number is even"
     else
@@ -287,14 +291,13 @@ do
        echo "Exiting..."
        break
     elif [[ $P_NUMBER -lt 0 ]]
-    then 
+    then
        echo " The number is a negative please enter a positive number !!!"
-       continue  
+       continue
     else
         is_odd $P_NUMBER
 
-    fi    
+    fi
 
 done
-```
-
+````
