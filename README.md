@@ -59,18 +59,18 @@ Each folder contains:
 
 ## 🧾 Progress Overview
 
-| No  | Topic                         | Folder                           |
-| --- | ----------------------------- | -------------------------------- |
-| 01  | Managing Files in Linux       | [Linux-Plus-01](./Linux-Plus-01) |
-| 02  | Linux Environment Variables   | [Linux-Plus-02](./Linux-Plus-02) |
-| 03  | Managing Users and Groups     | [Linux-Plus-03](./Linux-Plus-03) |
-| 04  | Filters and Control Operators | [Linux-Plus-04](./Linux-Plus-04) |
-| 05  | sed & awk command and crontab | [Linux-Plus-05](./Linux-Plus-05) |
-| 06  | Shell Scripting Basics        | [Linux-Plus-06](./Linux-Plus-06) |
-| 07  | Conditional Statements        | [Linux-Plus-07](./Linux-Plus-07) |
-| 08  | Loops                         | [Linux-Plus-08](./Linux-Plus-08) |
-| 09  | Shell Scripting / Functions   | [Linux-Plus-09](./Linux-Plus-09) |
-| ... | ...                           | ...                              |
+| No  | Topic                          | Folder                                                                   |
+| --- | ------------------------------ | ------------------------------------------------------------------------ |
+| 01  | File Management & Search       | [01-file-management-and-search](./01-file-management-and-search)         |
+| 02  | Environment Variables & PATH   | [02-environment-variables-and-path](./02-environment-variables-and-path) |
+| 03  | User & Group Management        | [03-user-and-group-management](./03-user-and-group-management)           |
+| 04  | Package Management (apt / yum) | [04-package-management-apt-yum](./04-package-management-apt-yum)         |
+| 05  | Filters & Control Operators    | [05-filters-and-control-operators](./05-filters-and-control-operators)   |
+| 06  | sed, awk, crontab & scp        | [06-sed-awk-crontab-scp](./06-sed-awk-crontab-scp)                       |
+| 07  | Bash Scripting Basics          | [07-bash-scripting-basics](./07-bash-scripting-basics)                   |
+| 08  | Conditional Statements         | [08-bash-conditional-statements](./08-bash-conditional-statements)       |
+| 09  | Loops                          | [09-bash-loops](./09-bash-loops)                                         |
+| 10  | Functions & Variable Scope     | [10-bash-functions-and-scope](./10-bash-functions-and-scope)             |
 
 ---
 
